@@ -1,0 +1,296 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: white;
+}
+body.dark {
+  background: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.visi {
+  animation: fade-in 0.4s linear both;
+  diplay: block;
+}
+
+.disapp {
+  opacity: 0;
+}
+
+.app {
+  transform: opacity o.3s;
+  opacity: 1;
+}
+nav {
+  z-index: 1;
+  position: fixed;
+  display: inline block;
+  width: 98vw;
+  height: 50px;
+  padding: 10px 30px 10px 30px;
+}
+
+nav.trans {
+  transition: background 0.4s linear;
+  background: transparent;
+}
+
+nav.blk {
+  background: black;
+}
+
+nav.blk.dark,
+nav.blk.dark li.cap {
+  background: white;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: FLEX-START;
+  place-items: center;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+}
+
+nav li a,
+nav li {
+  text-decoration: none;
+  font-size: 23px;
+  list-style-type: none;
+  margin: 0px 25px 0px 35px;
+  color: white;
+}
+
+nav.blk.dark li a,
+nav.blk.dark li {
+  color: black;
+}
+
+.drop ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.drop li {
+  width: 65px;
+  border: 2px solid silver;
+  border-radius: 3px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 30px;
+  background: black;
+}
+nav.dark .drop li {
+  background: transparent;
+  color: white;
+}
+
+.drop li:hover {
+  cursor: pointer;
+}
+.drop li.cap,
+nav.dark .drop li.cap {
+  background: transparent;
+  color: white;
+  border: none;
+  display: inline;
+}
+nav.blk.dark .drop li.cap {
+  color: black;
+}
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.mode {
+  width: 200px;
+  height: 20px;
+  float: right;
+  display: inline-flex;
+  overflow: hidden;
+  margin-right: 30px;
+  border-radius: 200px;
+}
+.mode button {
+  width: 100px;
+  height: 20px;
+  background: grey;
+  border: 1px dotted blue;
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.3;
+}
+.mode button.clicked {
+  background: cyan;
+  color: black;
+  opacity: 1;
+}
+
+div.bookHead h1 {
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #33ae22;
+}
+
+.contain {
+  display: flex;
+  width: 98vw;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  place-items: flex-start;
+}
+
+.holder {
+  float: left;
+  width: 250px;
+  height: 370px;
+  margin: 60px;
+  border-radius: 5px;
+  perspective: 1000px;
+  background: transparent;
+}
+.d {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.d button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 50px;
+}
+body.dark .d button {
+  background: white;
+  color: black;
+}
+.inn-holder {
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.holder:hover .inn-holder {
+  transform: rotateY(180deg);
+}
+
+.book,
+.back {
+  color: WHITE;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #750202;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  flex-flow: column wrap;
+}
+.book img {
+  border-radius: 50px;
+  border: 2px solid black;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+.back {
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+textarea {
+  width: 162.8px;
+  height: 32.4px;
+  resize: none;
+  border-radius: 3px;
+  margin: 7px;
+  text-align: center;
+  line-height: 32.4px;
+}
+
+.data {
+  width: 162.8px;
+  height: 32.4px;
+  border-radius: 3px;
+  background: #e87b7b;
+  margin: 7px;
+  color: white;
+  text-align: center;
+  line-height: 32.4px;
+  overflow: hidden;
+}
+
+span {
+  margin: 25px;
+  width: 10%-50px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+span button {
+  border: none;
+  border-radius: 4px;
+  background: green;
+  color: white;
+  font-weight: bold;
+  margin: 0px 20px 0px 20px;
+  width: 120px;
+  height: 30px;
+}
+
+.about {
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  color: black;
+}
+body.dark .about {
+  color: white;
+}
+
+footer {
+  margin: 60px 0px 0px 0px;
+  height: 70px;
+}
+footer ul {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer li {
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  border: none;
+  box-shadow: 3px 3px 5px grey;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

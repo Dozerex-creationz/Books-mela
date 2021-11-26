@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book MELA!</title>
+    <meta name="view-port" content="width-device=width,initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/files/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a id="home"></a>
+    <header>
+      <nav class="trans">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <div class="drop">
+              <ul id="list">
+                <li class="cap">Theme</li>
+                <li class="lighty hidden">Light</li>
+                <li class="darky hidden">Dark</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <img src="resources/poster.jfif" alt="this is the image of a big book" />
+    <div class="mode">
+      <button id="user" class="user clicked">User Mode</button>
+      <button id="admin" class="admin">Admin Mode</button>
+    </div>
+
+    <a id="books"></a>
+    <div class="titl"></div>
+    <div class="bookHead"><h1>Hover To see the Books' Details...</h1></div>
+
+    <div class="contain">
+      <div class="holder">
+        <div class="inn-holder">
+          <div class="book">
+            <img src="resources/book.jfif" alt="this is a imag of a book" />
+            <div class="data" id="dName4">Book Number: 5</div>
+          </div>
+          <div class="back">
+            <h3>Name:</h3>
+            <div class="data" id="dbookId4">Monte Cristo</div>
+            <textarea class="hidden" id="bookId4"></textarea>
+            <h4>Author:</h4>
+            <div class="data" id="dauthor4">Alexandre Dumas</div>
+            <textarea id="author4" class="hidden"></textarea>
+            <h4>Cost:</h4>
+            <div class="data" id="dcost4">275</div>
+            <textarea id="cost4" class="hidden"></textarea>
+            <span class="buttons">
+              <button class="disapp save" id="save4" onClick="toEdit(4)">
+                Edit
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="holder">
+        <div class="inn-holder">
+          <div class="book">
+            <img src="resources/book.jfif" alt="this is a imag of a book" />
+            <div class="data" id="dName3">Book Number: 4</div>
+          </div>
+          <div class="back">
+            <h3>Name:</h3>
+            <div class="data" id="dbookId3">
+              The Young King and other short stories
+            </div>
+            <textarea class="hidden" id="bookId3"></textarea>
+            <h4>Author:</h4>
+            <div class="data" id="dauthor3">Oscar Wilde</div>
+            <textarea id="author3" class="hidden"></textarea>
+            <h4>Cost:</h4>
+            <div class="data" id="dcost3">140</div>
+            <textarea id="cost3" class="hidden"></textarea>
+            <span class="buttons">
+              <button class="disapp save" id="save3" onClick="toEdit(3)">
+                Edit
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="holder">
+        <div class="inn-holder">
+          <div class="book">
+            <img src="resources/book.jfif" alt="this is a imag of a book" />
+            <div class="data" id="dName2">Book Number: 3</div>
+          </div>
+          <div class="back">
+            <h3>Name:</h3>
+            <div class="data" id="dbookId2">The Second Chance</div>
+            <textarea class="hidden" id="bookId2"></textarea>
+            <h4>Author:</h4>
+            <div class="data" id="dauthor2">Paula Smith</div>
+            <textarea id="author2" class="hidden"></textarea>
+            <h4>Cost:</h4>
+            <div class="data" id="dcost2">120</div>
+            <textarea id="cost2" class="hidden"></textarea>
+            <span class="buttons">
+              <button class="disapp save" id="save2" onClick="toEdit(2)">
+                Edit
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="holder">
+        <div class="inn-holder">
+          <div class="book">
+            <img src="resources/book.jfif" alt="this is a imag of a book" />
+            <div class="data" id="dName0">Book Number: 2</div>
+          </div>
+          <div class="back">
+            <h3>Name:</h3>
+            <div class="data" id="dbookId1">BuzzWorld literature reader</div>
+            <textarea class="hidden" id="bookId1"></textarea>
+            <h4>Author:</h4>
+            <div class="data" id="dauthor1">Rena Ghosh</div>
+            <textarea id="author1" class="hidden"></textarea>
+            <h4>Cost:</h4>
+            <div class="data" id="dcost1">90</div>
+            <textarea id="cost1" class="hidden"></textarea>
+            <span class="buttons">
+              <button class="disapp save" id="save1" onClick="toEdit(1)">
+                Edit
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="holder">
+        <div class="inn-holder">
+          <div class="book">
+            <img src="resources/book.jfif" alt="this is a imag of a book" />
+            <div class="data" id="dName0">Book Number: 1</div>
+          </div>
+          <div class="back">
+            <h3>Name:</h3>
+            <div class="data" id="dbookId0">Treasure Island</div>
+            <textarea class="hidden" id="bookId0"></textarea>
+            <h4>Author:</h4>
+            <div class="data" id="dauthor0">R.L. Stevenson</div>
+            <textarea id="author0" class="hidden"></textarea>
+            <h4>Cost:</h4>
+            <div class="data" id="dcost0">220</div>
+            <textarea id="cost0" class="hidden"></textarea>
+            <span class="buttons">
+              <button class="disapp save" id="save0" onClick="toEdit(0)">
+                Edit
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="add" class="hidden">
+        <div class="holder d">
+          <button id="addBtn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <a id="about"></a>
+
+    <div class="about">
+      <h3>About..</h3>
+      <p>
+        This is a attempt to create a crippled book selling platform since it
+        does'nt support back-end yet, this attempt is succefull and this project
+        belongs to Dozerex...
+      </p>
+    </div>
+    <hr />
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.instagram.com/dozerex_creationz/?hl=en"
+            target="_blank"
+            ><i class="fa fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/dozerexcreationz/" target="_blank"
+            ><i class="fa fa-facebook-f fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/dozerexreignzz" target="_blank"
+            ><i class="fa fa-twitter fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <a id="contact"></a>
+    <script src="resources/files/scripts.js"></script>
+  </body>
+</html>
