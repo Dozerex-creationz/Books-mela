@@ -15,7 +15,7 @@ body.dark {
 
 .visi {
   animation: fade-in 0.4s linear both;
-  diplay: block;
+  display: block;
 }
 
 .disapp {
@@ -23,7 +23,7 @@ body.dark {
 }
 
 .app {
-  transform: opacity o.3s;
+  transform: opacity 0.3s;
   opacity: 1;
 }
 nav {
